@@ -1,0 +1,216 @@
+numCP,CP,Descripcion,comercio,status,responseCode,responseMessage,push.amount,push.currency,push.actionCode,push.responseCode,pull.amount,pull.currency,pull.actionCode,pull.responseCode,reverseFunds.amount,reverseFunds.currency,reverseFunds.actionCode,reverseFunds.responseCode
+1,CP001,"Validar la ejecucion de una Trx Exitosa de P2P No interoperable con Tarjeta en Claro Visa Soles en Origen y Tarjeta en claro en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen: en Claro
+Destino: en claro
+
+Resultado esperado
+AFT = Exitoso
+OCT = Exitoso",341198210,200,200,OK,4.0,PEN,00,V,4.00,PEN,00,V,,,,
+2,CP002,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta en Claro Visa Soles en Origen y Tarjeta en claro en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen: en Claro
+Destino: en claro
+
+Resultado esperado
+AFT = Denegado
+OCT = Exitoso",341198210,400,400,"Issuer or switch inoperative and STIP not applicable or not available for this transaction; Time-out when no stand-in; POS Check Service: Destination unavailable; Credit Voucher and Merchandise Return Authorizations: V.I.P. sent the transaction to the issuer, but the issuer was unavailable.",,,,,4.00,PEN,91,V,,,,
+3,CP003,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta en Claro Visa Soles en Origen y Tarjeta en claro en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen:  en Claro
+Destino: en claro
+
+Resultado esperado
+AFT = Exitoso
+OCT = Denegado
+
+",341198210,201,409,Reversed,4.0,PEN,91,V,4.00,PEN,00,V,4.00,PEN,00,V
+4,CP004,"Validar la ejecucion de una Trx Exitosa de P2P No interoperable con Tarjeta en Claro Visa Soles en Origen y Tarjeta Token en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen:  en claro
+Destino: Token
+
+Resultado esperado
+AFT = Exitoso
+OCT = Exitoso
+",341198210,200,200,OK,4.0,PEN,00,V,4.00,PEN,00,V,,,,
+5,CP005,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta en Claro Visa Soles en Origen y Tarjeta Token en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen: en claro
+Destino: Token
+
+Resultado esperado
+AFT = Denegado
+OCT = Exitoso",341198210,400,400,"Issuer or switch inoperative and STIP not applicable or not available for this transaction; Time-out when no stand-in; POS Check Service: Destination unavailable; Credit Voucher and Merchandise Return Authorizations: V.I.P. sent the transaction to the issuer, but the issuer was unavailable.",,,,,4.00,PEN,91,V,,,,
+6,CP006,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta en Claro Visa Soles en Origen y Tarjeta Token en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen:  en claro
+Destino: Token
+
+Resultado esperado
+AFT = Exitoso
+OCT = Denegado
+",341198210,201,409,Reversed,4.0,PEN,91,V,4.00,PEN,00,V,4.00,PEN,00,V
+7,CP007,"Validar la ejecucion de una Trx Exitosa de P2P No interoperable con Tarjeta Token Visa Soles en Origen y Tarjeta en claro en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen: Token
+Destino: en claro
+
+Resultado esperado
+AFT = Exitoso
+OCT = Exitoso
+",341198210,200,200,OK,4.0,PEN,00,V,4.00,PEN,00,V,,,,
+8,CP008,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta Token Visa Soles en Origen y Tarjeta en claro en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen: Token
+Destino: en claro
+
+Resultado esperado
+AFT = Denegado
+OCT = Exitoso
+",341198210,400,400,"Issuer or switch inoperative and STIP not applicable or not available for this transaction; Time-out when no stand-in; POS Check Service: Destination unavailable; Credit Voucher and Merchandise Return Authorizations: V.I.P. sent the transaction to the issuer, but the issuer was unavailable.",,,,,4.00,PEN,91,V,,,,
+9,CP009,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta Token Visa Soles en Origen y Tarjeta en claro en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen:  Token
+Destino: en claro
+
+Resultado esperado
+AFT = Exitoso
+OCT = Denegado
+",341198210,201,409,Reversed,4.0,PEN,91,V,4.00,PEN,00,V,4.00,PEN,00,V
+10,CP010,"Validar la ejecucion de una Trx Exitosa de P2P No interoperable con Tarjeta Token Visa Soles en Origen y Tarjeta Token en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen:  Token
+Destino: Token
+
+Resultado esperado
+AFT = Exitoso
+OCT = Exitoso
+",341198210,200,200,OK,4.0,PEN,00,V,4.00,PEN,00,V,,,,
+11,CP011,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta Token Visa Soles en Origen y Tarjeta Token en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen: Token
+Destino: Token
+
+Resultado esperado
+AFT = Denegado
+OCT = Exitoso
+",341198210,400,400,"Issuer or switch inoperative and STIP not applicable or not available for this transaction; Time-out when no stand-in; POS Check Service: Destination unavailable; Credit Voucher and Merchandise Return Authorizations: V.I.P. sent the transaction to the issuer, but the issuer was unavailable.",,,,,4.00,PEN,91,V,,,,
+12,CP012,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta Token Visa Soles en Origen y Tarjeta Token en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen:  Token
+Destino: Token
+
+Resultado esperado
+AFT = Exitoso
+OCT = Denegado
+",341198210,201,409,Reversed,4.0,PEN,91,V,4.00,PEN,00,V,4.00,PEN,00,V
+13,CP013,"Validar la ejecucion de una Trx Exitosa de P2P No interoperable con Tarjeta en Claro Visa Soles en Origen y Tarjeta en claro en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen: en Claro
+Destino: en claro
+
+Resultado esperado
+AFT = Exitoso
+OCT = Exitoso
+",110777209,200,200,OK,4.0,PEN,00,V,4.00,PEN,00,V,,,,
+14,CP014,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta en Claro Visa Soles en Origen y Tarjeta en claro en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen: en Claro
+Destino: en claro
+
+Resultado esperado
+AFT = Denegado
+OCT = Exitoso
+",110777209,400,400,"Issuer or switch inoperative and STIP not applicable or not available for this transaction; Time-out when no stand-in; POS Check Service: Destination unavailable; Credit Voucher and Merchandise Return Authorizations: V.I.P. sent the transaction to the issuer, but the issuer was unavailable.",,,,,4.00,PEN,91,V,,,,
+15,CP015,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta en Claro Visa Soles en Origen y Tarjeta en claro en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen:  en Claro
+Destino: en claro
+
+Resultado esperado
+AFT = Exitoso
+OCT = Denegado
+",110777209,201,409,Reversed,4.0,PEN,91,V,4.00,PEN,00,V,4.00,PEN,00,V
+16,CP016,"Validar la ejecucion de una Trx Exitosa de P2P No interoperable con Tarjeta en Claro Visa Soles en Origen y Tarjeta Token en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen:  en claro
+Destino: Token
+
+Resultado esperado
+AFT = Exitoso
+OCT = Exitoso
+",110777209,200,200,OK,4.0,PEN,00,V,4.00,PEN,00,V,,,,
+17,CP017,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta en Claro Visa Soles en Origen y Tarjeta Token en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen: en claro
+Destino: Token
+
+Resultado esperado
+AFT = Denegado
+OCT = Exitoso
+",110777209,400,400,"Issuer or switch inoperative and STIP not applicable or not available for this transaction; Time-out when no stand-in; POS Check Service: Destination unavailable; Credit Voucher and Merchandise Return Authorizations: V.I.P. sent the transaction to the issuer, but the issuer was unavailable.",,,,,4.00,PEN,91,V,,,,
+18,CP018,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta en Claro Visa Soles en Origen y Tarjeta Token en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen:  en claro
+Destino: Token
+
+Resultado esperado
+AFT = Exitoso
+OCT = Denegado
+",110777209,201,409,Reversed,4.0,PEN,91,V,4.00,PEN,00,V,4.00,PEN,00,V
+19,CP019,"Validar la ejecucion de una Trx Exitosa de P2P No interoperable con Tarjeta Token Visa Soles en Origen y Tarjeta en claro en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen: Token
+Destino: en claro
+
+Resultado esperado
+AFT = Exitoso
+OCT = Exitoso
+",110777209,200,200,OK,4.0,PEN,00,V,4.00,PEN,00,V,,,,
+20,CP020,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta Token Visa Soles en Origen y Tarjeta en claro en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen: Token
+Destino: en claro
+
+Resultado esperado
+AFT = Denegado
+OCT = Exitoso
+",110777209,400,400,"Issuer or switch inoperative and STIP not applicable or not available for this transaction; Time-out when no stand-in; POS Check Service: Destination unavailable; Credit Voucher and Merchandise Return Authorizations: V.I.P. sent the transaction to the issuer, but the issuer was unavailable.",,,,,4.00,PEN,91,V,,,,
+21,CP021,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta Token Visa Soles en Origen y Tarjeta en claro en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen:  Token
+Destino: en claro
+
+Resultado esperado
+AFT = Exitoso
+OCT = Denegado
+",110777209,400,400,"Issuer or switch inoperative and STIP not applicable or not available for this transaction; Time-out when no stand-in; POS Check Service: Destination unavailable; Credit Voucher and Merchandise Return Authorizations: V.I.P. sent the transaction to the issuer, but the issuer was unavailable.",,,,,4.00,PEN,91,V,,,,
+22,CP022,"Validar la ejecucion de una Trx Exitosa de P2P No interoperable con Tarjeta Token Visa Soles en Origen y Tarjeta Token en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen:  Token
+Destino: Token
+
+Resultado esperado
+AFT = Exitoso
+OCT = Exitoso
+",110777209,200,200,OK,4.0,PEN,00,V,4.00,PEN,00,V,,,,
+23,CP023,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta Token Visa Soles en Origen y Tarjeta Token en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen: Token
+Destino: Token
+
+Resultado esperado
+AFT = Denegado
+OCT = Exitoso
+",110777209,400,400,"Issuer or switch inoperative and STIP not applicable or not available for this transaction; Time-out when no stand-in; POS Check Service: Destination unavailable; Credit Voucher and Merchandise Return Authorizations: V.I.P. sent the transaction to the issuer, but the issuer was unavailable.",,,,,4.00,PEN,91,V,,,,
+24,CP024,"Validar la ejecucion de una Trx Denegada de P2P No interoperable con Tarjeta Token Visa Soles en Origen y Tarjeta Token en Destino, cuando todos los flag se encuentran inactivos:
+
+Origen:  Token
+Destino: Token
+
+Resultado esperado
+AFT = Exitoso
+OCT = Denegado
+",110777209,201,409,Reversed,4.0,PEN,91,V,4.00,PEN,00,V,4.00,PEN,00,V
+,,,,,,,,,,,,,,,,,,
